@@ -69,7 +69,7 @@
               <a href="#" class="user_link" data-toggle="modal" data-target="#loginModal">
                 <i class="fa fa-user" aria-hidden="true"></i>
               </a>
-              <a class="cart_link" href="#" onclick="navigateTo('order')">
+              <a class="cart_link" href="#" data-toggle="modal" data-target="#orderOnlineModal">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                   <g>
                     <g>
@@ -163,6 +163,37 @@
               <input type="password" class="form-control" id="password" placeholder="Password">
             </div>
             <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Online Modal -->
+  <div class="modal fade" id="orderOnlineModal" tabindex="-1" role="dialog" aria-labelledby="orderOnlineModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orderOnlineModalLabel">Order Online</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="orderName">Name</label>
+              <input type="text" class="form-control" id="orderName" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="orderEmail">Email</label>
+              <input type="email" class="form-control" id="orderEmail" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="orderDetails">Order Details</label>
+              <textarea class="form-control" id="orderDetails" rows="3" placeholder="Enter your order details"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Order</button>
           </form>
         </div>
       </div>
